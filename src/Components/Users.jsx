@@ -1,5 +1,5 @@
 // import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Users = () => {
   return (
@@ -34,6 +34,8 @@ const Users = () => {
           Happy
         </Link>
       </div>
+      <hr />
+      <Outlet />
     </div>
   );
 };

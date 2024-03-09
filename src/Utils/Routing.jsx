@@ -9,8 +9,9 @@ const Routing = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/users" element={<Users />} />
-      <Route path="/users/:name" element={<UserDetail />} />
+      <Route path="/users" element={<Users />}>
+        <Route path="/users/:name" element={<UserDetail />} />
+      </Route>
       <Route path="/about" element={<About />} />
     </Routes>
   );
